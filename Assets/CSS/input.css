@@ -32,3 +32,11 @@ body{
 .container{        
     @apply max-w-[var(--widthContent)]
 } 
+
+.tab-toggler.ui-tabs-active {
+    @apply bg-white text-[#282926]
+}
+
+.card-shadow {
+    box-shadow: 0px 4px 4px 0px #28292626;
+}
