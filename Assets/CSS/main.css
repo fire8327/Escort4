@@ -683,24 +683,20 @@ video {
   left: 0.75rem;
 }
 
-.right-3 {
-  right: 0.75rem;
-}
-
-.top-2\.5 {
-  top: 0.625rem;
-}
-
-.top-3 {
-  top: 0.75rem;
-}
-
 .right-1 {
   right: 0.25rem;
 }
 
+.right-3 {
+  right: 0.75rem;
+}
+
 .top-1 {
   top: 0.25rem;
+}
+
+.top-2\.5 {
+  top: 0.625rem;
 }
 
 .isolate {
@@ -875,6 +871,10 @@ video {
   display: none;
 }
 
+.h-7 {
+  height: 1.75rem;
+}
+
 .h-9 {
   height: 2.25rem;
 }
@@ -889,6 +889,10 @@ video {
 
 .w-3\.5 {
   width: 0.875rem;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .w-9 {
@@ -914,6 +918,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.max-w-\[\] {
+  max-width: ;
+}
+
+.max-w-\[1160px\] {
+  max-width: 1160px;
 }
 
 .flex-shrink {
@@ -954,6 +966,12 @@ video {
 
 .border-separate {
   border-collapse: separate;
+}
+
+.scale-\[-1\] {
+  --tw-scale-x: -1;
+  --tw-scale-y: -1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .\!transform {
@@ -1458,6 +1476,10 @@ video {
   gap: 0.5rem;
 }
 
+.gap-2\.5 {
+  gap: 0.625rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
@@ -1468,6 +1490,10 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-y-6 {
@@ -1802,6 +1828,14 @@ video {
   border-radius: 0.375rem;
 }
 
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -1946,6 +1980,11 @@ video {
 
 .bg-\[\#6A6A6A1A\] {
   background-color: #6A6A6A1A;
+}
+
+.bg-\[\#F2F2F2\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 242 242 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#F6F6F6\] {
@@ -2107,6 +2146,10 @@ video {
   padding: 0.75rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -2137,6 +2180,11 @@ video {
   padding-right: 1.5rem;
 }
 
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -2145,6 +2193,11 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
 }
 
 .text-left {
@@ -2220,6 +2273,11 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -2313,6 +2371,11 @@ video {
 .text-\[\#6A6A6A\] {
   --tw-text-opacity: 1;
   color: rgb(106 106 106 / var(--tw-text-opacity));
+}
+
+.text-\[\#EE5253\] {
+  --tw-text-opacity: 1;
+  color: rgb(238 82 83 / var(--tw-text-opacity));
 }
 
 .text-\[\#FEFEFE\] {
@@ -2773,6 +2836,17 @@ body {
   box-shadow: 0px 0px 8px 0px #28292680;
 }
 
+.pagination-active {
+  border-radius: 0.375rem;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #EE5253 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(238 82 83 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #FF6B6B var(--tw-gradient-to-position);
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -2853,12 +2927,20 @@ body {
     height: 2.5rem;
   }
 
+  .md\:h-8 {
+    height: 2rem;
+  }
+
   .md\:w-10 {
     width: 2.5rem;
   }
 
   .md\:w-4 {
     width: 1rem;
+  }
+
+  .md\:w-8 {
+    width: 2rem;
   }
 
   .md\:grid-cols-2 {
@@ -2869,8 +2951,20 @@ body {
     gap: 1.25rem;
   }
 
+  .md\:gap-7 {
+    gap: 1.75rem;
+  }
+
   .md\:gap-y-10 {
     row-gap: 2.5rem;
+  }
+
+  .md\:rounded-3xl {
+    border-radius: 1.5rem;
+  }
+
+  .md\:p-5 {
+    padding: 1.25rem;
   }
 
   .md\:px-4 {
@@ -2902,6 +2996,11 @@ body {
     font-size: 0.75rem;
     line-height: 1rem;
   }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2924,6 +3023,10 @@ body {
     row-gap: 3.5rem;
   }
 
+  .xl\:p-6 {
+    padding: 1.5rem;
+  }
+
   .xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -2932,6 +3035,21 @@ body {
   .xl\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .xl\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
