@@ -40,3 +40,11 @@ body{
 .card-shadow {
     box-shadow: 0px 4px 4px 0px #28292626;
 }
+
+.card-background { 
+    background: linear-gradient(181.06deg, rgba(40, 41, 38, 0) 0.91%, #282926 84.36%);
+}
+
+.like-shadow {
+    box-shadow: 0px 0px 8px 0px #28292680;
+}

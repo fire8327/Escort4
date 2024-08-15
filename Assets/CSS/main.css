@@ -659,8 +659,48 @@ video {
   inset: -0.25rem;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
 .end-1 {
   inset-inline-end: 0.25rem;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.left-2\.5 {
+  left: 0.625rem;
+}
+
+.left-3 {
+  left: 0.75rem;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
+.top-2\.5 {
+  top: 0.625rem;
+}
+
+.top-3 {
+  top: 0.75rem;
+}
+
+.right-1 {
+  right: 0.25rem;
+}
+
+.top-1 {
+  top: 0.25rem;
 }
 
 .isolate {
@@ -669,6 +709,14 @@ video {
 
 .isolation-auto {
   isolation: auto;
+}
+
+.z-\[1\] {
+  z-index: 1;
+}
+
+.z-\[2\] {
+  z-index: 2;
 }
 
 .float-start {
@@ -718,6 +766,10 @@ video {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.-mt-7 {
+  margin-top: -1.75rem;
 }
 
 .mt-2 {
@@ -827,6 +879,10 @@ video {
   height: 2.25rem;
 }
 
+.h-\[140px\] {
+  height: 140px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -849,6 +905,11 @@ video {
 
 .w-\[weird-and-invalid\] {
   width: weird-and-invalid;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .w-full {
@@ -1737,6 +1798,10 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -1888,6 +1953,10 @@ video {
   background-color: rgb(246 246 246 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#FEFEFE33\] {
+  background-color: #FEFEFE33;
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -1997,6 +2066,14 @@ video {
   background-origin: content-box;
 }
 
+.fill-\[\#EE5253\] {
+  fill: #EE5253;
+}
+
+.fill-white {
+  fill: #fff;
+}
+
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -2040,6 +2117,16 @@ video {
   padding-right: 0.375rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -2048,6 +2135,11 @@ video {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .py-2 {
@@ -2221,6 +2313,11 @@ video {
 .text-\[\#6A6A6A\] {
   --tw-text-opacity: 1;
   color: rgb(106 106 106 / var(--tw-text-opacity));
+}
+
+.text-\[\#FEFEFE\] {
+  --tw-text-opacity: 1;
+  color: rgb(254 254 254 / var(--tw-text-opacity));
 }
 
 .text-blue-500 {
@@ -2537,6 +2634,16 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -2650,11 +2757,20 @@ body {
 .tab-toggler.ui-tabs-active {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  color: #;
+  --tw-text-opacity: 1;
+  color: rgb(40 41 38 / var(--tw-text-opacity));
 }
 
 .card-shadow {
   box-shadow: 0px 4px 4px 0px #28292626;
+}
+
+.card-background {
+  background: linear-gradient(181.06deg, rgba(40, 41, 38, 0) 0.91%, #282926 84.36%);
+}
+
+.like-shadow {
+  box-shadow: 0px 0px 8px 0px #28292680;
 }
 
 @media (min-width: 640px) {

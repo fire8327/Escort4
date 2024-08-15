@@ -7,6 +7,14 @@ $(".showPhone").each((i, el) => {
 })
 
 
+/* likeButton */
+$(".likeButton").each((i, el) => {
+    $(el).click(() => {
+        $(el).find("svg").toggleClass("fill-white fill-[#EE5253]")
+    })
+})
+
+
 /* tabs */
 $(".tab-main").each(function(index) {
     let $this = $(this);
