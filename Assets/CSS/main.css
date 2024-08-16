@@ -723,12 +723,12 @@ video {
   top: 0.625rem;
 }
 
-.top-3 {
-  top: 0.75rem;
-}
-
 .top-6 {
   top: 1.5rem;
+}
+
+.top-3 {
+  top: 0.75rem;
 }
 
 .isolate {
@@ -944,12 +944,12 @@ video {
   height: 140px;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-px {
   height: 1px;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-1\/2 {
@@ -991,6 +991,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[25\] {
+  width: 25;
+}
+
+.w-\[25\%\] {
+  width: 25%;
 }
 
 .max-w-\[1160px\] {
@@ -1916,10 +1924,6 @@ video {
   border-radius: 1rem;
 }
 
-.rounded-3xl {
-  border-radius: 1.5rem;
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -1930,6 +1934,10 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
 }
 
 .rounded-b {
@@ -2135,8 +2143,18 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-\[\] {
+  --tw-gradient-from:  var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .to-\[\#FF6B6B\] {
   --tw-gradient-to: #FF6B6B var(--tw-gradient-to-position);
+}
+
+.to-\[\] {
+  --tw-gradient-to:  var(--tw-gradient-to-position);
 }
 
 .decoration-slice {
@@ -2332,6 +2350,11 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
 }
 
 .pl-10 {
@@ -2548,10 +2571,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\] {
-  color: ;
 }
 
 .underline {
@@ -3119,10 +3138,6 @@ body {
     height: 2rem;
   }
 
-  .md\:w-1\/2 {
-    width: 50%;
-  }
-
   .md\:w-10 {
     width: 2.5rem;
   }
@@ -3133,6 +3148,14 @@ body {
 
   .md\:w-8 {
     width: 2rem;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:w-\[25\%\] {
+    width: 25%;
   }
 
   .md\:grid-cols-2 {
@@ -3225,6 +3248,10 @@ body {
     width: 50%;
   }
 
+  .lg\:w-\[25\%\] {
+    width: 25%;
+  }
+
   .lg\:gap-20 {
     gap: 5rem;
   }
@@ -3272,16 +3299,16 @@ body {
     gap: 3.5rem;
   }
 
-  .xl\:gap-16 {
-    gap: 4rem;
-  }
-
   .xl\:gap-36 {
     gap: 9rem;
   }
 
   .xl\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .xl\:gap-16 {
+    gap: 4rem;
   }
 
   .xl\:gap-y-14 {
@@ -3317,10 +3344,6 @@ body {
     line-height: 2.25rem;
   }
 
-  .xl\:text-\[18px\] {
-    font-size: 18px;
-  }
-
   .xl\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -3334,6 +3357,10 @@ body {
   .xl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .xl\:text-\[18px\] {
+    font-size: 18px;
   }
 }
 
