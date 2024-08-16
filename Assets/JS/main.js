@@ -1,3 +1,31 @@
+/* nav-slider */
+const swiper = new Swiper('.nav-slider', {
+    loop: true,
+    navigation: {
+      nextEl: '.nav-next',
+      prevEl: '.nav-prev',
+    },    
+    breakpoints: {
+        320: {
+          slidesPerView: 5,
+          spaceBetween: 12,
+        },
+        768: {
+          slidesPerView: 10,
+          spaceBetween: 16,
+        },
+        1024: {
+          slidesPerView: 12,
+          spaceBetween: 24,
+        },
+        1280: {
+          slidesPerView: 16,
+          spaceBetween: 24,
+        }
+    }
+});
+
+
 /* showPhone */
 $(".showPhone").each((i, el) => {
     $(el).click(() => {

@@ -49,6 +49,17 @@ body{
     box-shadow: 0px 0px 8px 0px #28292680;
 }
 
+.nav-shadow {
+    box-shadow: 0px 0px 4px 0px #28292640;
+}
+
 .pagination-active {
     @apply text-white bg-gradient-to-r from-[#EE5253] to-[#FF6B6B] rounded-md
+}
+
+.nav-active {
+    @apply text-[#EE5253]
+}
+.nav-active > svg {
+    @apply fill-[#EE5253]
 }
