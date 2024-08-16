@@ -19,7 +19,7 @@
                             <img src="Assets/Images/header/search.svg" alt="">
                         </button>
                     </form>
-                    <button class="h-9 xl:h-10 max-md:hidden">
+                    <button class="h-9 xl:h-10 max-md:hidden openModal">
                         <img src="Assets/Images/header/location.svg" alt="">
                     </button>
                     <button class="h-9 xl:h-10">
@@ -302,6 +302,63 @@
             </nav>
         </div>
     </header>
+    
+    <div id="modal" class="fixed top-0 -translate-y-full transition-all duration-500 left-0 z-[5] w-full bg-white">
+        <div class="container mx-auto px-4 md:px-5 xl:px-[30px] flex flex-col gap-6 items-center py-6 w-full">
+            <h2 class="text-center text-lg md:text-xl xl:text-2xl font-bold">Станции метро</h2>
+            <ul class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-1 text-[#EE5253] w-full">             
+                <li><a href="#">Авиамоторная <span class="italic text-[#282926]">(22)</span></a></li>
+                <li><a href="#">Автозаводская <span class="italic text-[#282926]">(70)</span></a></li>
+                <li><a href="#">Академическая <span class="italic text-[#282926]">(144)</span></a></li>
+                <li><a href="#">Александровский сад <span class="italic text-[#282926]">(8)</span></a></li>
+                <li><a href="#">Алексеевская <span class="italic text-[#282926]">(31)</span></a></li>
+                <li><a href="#">Алма-Атинская <span class="italic text-[#282926]">(29)</span></a></li>
+                <li><a href="#">Алтуфьево <span class="italic text-[#282926]">(39)</span></a></li>
+                <li><a href="#">Аминьевское шоссе <span class="italic text-[#282926]">(9)</span></a></li>
+                <li><a href="#">Андроновка <span class="italic text-[#282926]">(27)</span></a></li>
+                <li><a href="#">Аникеевка <span class="italic text-[#282926]">(4)</span></a></li>
+                <li><a href="#">Аннино <span class="italic text-[#282926]">(18)</span></a></li>
+                <li><a href="#">Арбатская <span class="italic text-[#282926]">(21)</span></a></li>
+                <li><a href="#">Аэропорт <span class="italic text-[#282926]">(66)</span></a></li>
+                <li><a href="#">Бабушкинская <span class="italic text-[#282926]">(45)</span></a></li>
+                <li><a href="#">Багратионовская <span class="italic text-[#282926]">(41)</span></a></li>
+                <li><a href="#">Баковка <span class="italic text-[#282926]">(4)</span></a></li>
+                <li><a href="#">Балтийская <span class="italic text-[#282926]">(16)</span></a></li>
+                <li><a href="#">Баррикадная <span class="italic text-[#282926]">(9)</span></a></li>
+                <li><a href="#">Бауманская <span class="italic text-[#282926]">(28)</span></a></li>
+                <li><a href="#">Беговая <span class="italic text-[#282926]">(53)</span></a></li>
+                <li><a href="#">Белокаменная <span class="italic text-[#282926]">(5)</span></a></li>
+                <li><a href="#">Беломорская <span class="italic text-[#282926]">(30)</span></a></li>
+                <li><a href="#">Белорусская <span class="italic text-[#282926]">(23)</span></a></li>
+                <li><a href="#">Беляево <span class="italic text-[#282926]">(49)</span></a></li>
+                <li><a href="#">Бескудникова <span class="italic text-[#282926]">(11)</span></a></li>
+                <li><a href="#">Бибирево <span class="italic text-[#282926]">(30)</span></a></li>
+                <li><a href="#">Библиотека им.Ленина <span class="italic text-[#282926]">(11)</span></a></li>
+                <li><a href="#">Битца <span class="italic text-[#282926]">(21)</span></a></li>
+                <li><a href="#">Битцевский парк <span class="italic text-[#282926]">(19)</span></a></li>
+                <li><a href="#">Борисово <span class="italic text-[#282926]">(37)</span></a></li>
+                <li><a href="#">Боровицкая <span class="italic text-[#282926]">(4)</span></a></li>
+                <li><a href="#">Боровское шоссе <span class="italic text-[#282926]">(22)</span></a></li>
+                <li><a href="#">Ботанический сад <span class="italic text-[#282926]">(26)</span></a></li>
+                <li><a href="#">Братиславская <span class="italic text-[#282926]">(48)</span></a></li>
+                <li><a href="#">Бульвар Адмирала Ушакова <span class="italic text-[#282926]">(27)</span></a></li>
+                <li><a href="#">Бульвар Дмитрия Донского <span class="italic text-[#282926]">(46)</span></a></li>
+                <li><a href="#">Бульвар Рокоссовского <span class="italic text-[#282926]">(29)</span></a></li>
+                <li><a href="#">Бунинская аллея <span class="italic text-[#282926]">(29)</span></a></li>
+                <li><a href="#">Бутово <span class="italic text-[#282926]">(21)</span></a></li>
+                <li><a href="#">Бутырская <span class="italic text-[#282926]">(20)</span></a></li>
+                <li><a href="#">ВДНХ <span class="italic text-[#282926]">(46)</span></a></li>
+                <li><a href="#">Варшавская <span class="italic text-[#282926]">(34)</span></a></li>
+                <li><a href="#">Верхние Котлы <span class="italic text-[#282926]">(4)</span></a></li>
+                <li><a href="#">Верхние Лихоборы <span class="italic text-[#282926]">(17)</span></a></li>
+                <li><a href="#">Владыкино <span class="italic text-[#282926]">(34)</span></a></li>
+            </ul>
+        </div>
+        <button id="closeModal" class="fixed z-[6] top-6 right-6 w-8 xl:w-9">
+            <img src="Assets/Images/header/close.svg" alt="">
+        </button>
+    </div>
+    <div id="overlayModal" class="fixed z-[4] inset-0 bg-black/30 hidden"></div>
 
     <main class="grid-container gap-y-6 md:gap-y-10 xl:gap-y-14 my-6 md:my-10 xl:my-14">
         <section class="flex flex-col gap-6 w-full items-center">
@@ -315,7 +372,7 @@
                     <h1 class="text-xl md:text-2xl xl:text-3xl">Элитные (135)</h1>
                 </div>
                 <div class="flex items-center gap-3 text-[#6A6A6A]">
-                    <button class="flex items-center gap-2 p-2 md:py-3 md:px-4 text-xs xl:text-sm rounded-lg border border-[#6A6A6A]">
+                    <button class="flex items-center gap-2 p-2 md:py-3 md:px-4 text-xs xl:text-sm rounded-lg border border-[#6A6A6A] openModal">
                         <img src="Assets/Images/main/filter.svg" alt="">
                         <span class="max-md:hidden">Фильтры</span>
                     </button>

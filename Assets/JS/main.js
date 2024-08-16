@@ -32,6 +32,19 @@ const swiper2 = new Swiper('.card-slider', {
 });
 
 
+/* modal */
+$(".openModal").each((i, el) => {
+  $(el).click(() => {
+    $("#modal").removeClass("-translate-y-full")
+    $("#overlayModal").removeClass("hidden")
+  })
+})
+$("#closeModal, #overlayModal").click(() => {
+  $("#modal").addClass("-translate-y-full")
+  $("#overlayModal").addClass("hidden")
+})
+
+
 /* showPhone */
 $(".showPhone").each((i, el) => {
     $(el).click(() => {
