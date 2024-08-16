@@ -325,11 +325,11 @@
                     </button>
                 </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 xl:gap-6 w-full">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-5 xl:gap-6 w-full">
                 <article>
                     <div class="relative rounded-2xl overflow-hidden">
-                        <button class="absolute z-[1] top-2.5 left-2.5 py-1 px-3 bg-white font-semibold rounded-md text-[10px] md:text-xs">Элитные</button>
-                        <button class="absolute z-[1] top-1 right-1 likeButton">
+                        <button class="absolute z-[3] top-2.5 left-2.5 py-1 px-3 bg-white font-semibold rounded-md text-[10px] md:text-xs">Элитные</button>
+                        <button class="absolute z-[3] top-1 right-1 likeButton">
                             <svg class="fill-white transition-all duration-500" width="38" height="36" viewBox="0 0 38 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g filter="url(#filter0_d_2011_3815)">
                                     <path d="M9 15.119C9 20.2037 13.0194 22.9132 15.9617 25.3384C17 26.1942 18 27 19 27C20 27 21 26.1942 22.0383 25.3384C24.9806 22.9132 29 20.2037 29 15.119C29 10.0344 23.4998 6.42841 19 11.3167C14.5002 6.42841 9 10.0344 9 15.119Z"/>
@@ -349,7 +349,7 @@
                                 </defs>
                             </svg>
                         </button>
-                        <div class="absolute left-3 right-3 bottom-10 z-[2] flex items-center gap-1.5 flex-wrap">
+                        <div class="absolute left-3 right-3 bottom-10 z-[3] flex items-center gap-1.5 flex-wrap">
                             <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">BDSM</p>
                             <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Элитная</p>
                             <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Пирсинг</p>
@@ -358,14 +358,26 @@
                             <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Поцелуи</p>
                             <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">GFE</p>
                         </div>
-                        <div class="absolute w-full h-[140px] z-[1] left-0 bottom-0 card-background"></div>
-                        <img src="Assets/Images/card/main2.png" alt="" class="w-full">
+                        <div class="absolute w-full h-[140px] z-[2] left-0 bottom-0 card-background"></div>
+                        <a href="card-page.html" class="swiper card-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="Assets/Images/card/main1.png" alt="" class="w-full rounded-2xl">                                    
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/Images/card/main1.png" alt="" class="w-full rounded-2xl">                                    
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/Images/card/main1.png" alt="" class="w-full rounded-2xl">                                    
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="flex flex-col gap-2 p-3 bg-[#F6F6F6] rounded-2xl card-shadow -mt-7 relative z-[1]">
+                    <div class="flex flex-col gap-2 p-3 bg-[#F6F6F6] rounded-2xl card-shadow -mt-7 relative z-[3]">
                         <div class="flex flex-col w-full">
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center gap-1.5">
-                                    <h3 class="text-sm md:text-base font-bold">Имя Псевдоним, 21</h3>
+                                    <a href="card-page.html" class="text-sm md:text-base font-bold">Имя Псевдоним, 21</a>
                                     <img src="Assets/Images/card/check.svg" alt="">
                                 </div>
                                 <div class="flex items-center gap-1.5">
@@ -384,37 +396,37 @@
                             <div class="tab-card p-2 grid grid-cols-3 gap-1 rounded-b-lg bg-white">
                                 <div class="flex flex-col items-center text-center gap-1">
                                     <p class="text-xs md:text-sm font-light">Express</p>
-                                    <p class="text-sm md:text-base font-bold">9 000₽</p>
+                                    <h3 class="text-sm md:text-base font-bold">9 000₽</h3>
                                 </div>
                                 <div class="flex flex-col items-center text-center gap-1">
                                     <p class="text-xs md:text-sm font-light">Час</p>
-                                    <p class="text-sm md:text-base font-bold">20 000₽</p>
+                                    <h3 class="text-sm md:text-base font-bold">20 000₽</h3>
                                 </div>
                                 <div class="flex flex-col items-center text-center gap-1">
                                     <p class="text-xs md:text-sm font-light">Ночь</p>
-                                    <p class="text-sm md:text-base font-bold">100 000₽</p>
+                                    <h3 class="text-sm md:text-base font-bold">100 000₽</h3>
                                 </div>
                             </div>
                             <div class="tab-card p-2 grid grid-cols-3 gap-1 rounded-b-lg bg-white">
                                 <div class="flex flex-col items-center text-center gap-1">
                                     <p class="text-xs md:text-sm font-light">Express</p>
-                                    <p class="text-sm md:text-base font-bold">9 002₽</p>
+                                    <h3 class="text-sm md:text-base font-bold">9 002₽</h3>
                                 </div>
                                 <div class="flex flex-col items-center text-center gap-1">
                                     <p class="text-xs md:text-sm font-light">Час</p>
-                                    <p class="text-sm md:text-base font-bold">20 002₽</p>
+                                    <h3 class="text-sm md:text-base font-bold">20 002₽</h3>
                                 </div>
                                 <div class="flex flex-col items-center text-center gap-1">
                                     <p class="text-xs md:text-sm font-light">Ночь</p>
-                                    <p class="text-sm md:text-base font-bold">100 002₽</p>
+                                    <h3 class="text-sm md:text-base font-bold">100 002₽</h3>
                                 </div>
                             </div>
                         </div>
                         <div class="flex items-center gap-2 w-full">
-                            <div class="flex items-center px-6 h-9 md:h-10 grow gap-2 text-white font-semibold rounded-lg cursor-pointer bg-gradient-to-r from-[#EE5253] to-[#FF6B6B] showPhone">
+                            <div class="flex items-center justify-center px-4 h-9 md:h-10 grow gap-2 text-white font-semibold rounded-lg cursor-pointer bg-gradient-to-r from-[#EE5253] to-[#FF6B6B] showPhone">
                                 <img src="Assets/Images/card/phone.svg" alt="" class="w-3.5 md:w-4">
-                                <p class="text-xs md:text-sm show">Показать телефон</p>
-                                <a href="tel:88005553535" class="phone hidden">8 800 555-35-35</a>
+                                <p class="text-xs md:text-sm show shrink-0">Показать телефон</p>
+                                <a href="tel:88005553535" class="phone hidden shrink-0">8 800 555-35-35</a>
                             </div>
                             <a href="#" class="w-9 md:w-10">
                                 <img src="Assets/Images/card/tg.svg" alt="">
@@ -422,6 +434,771 @@
                             <a href="#" class="w-9 md:w-10">
                                 <img src="Assets/Images/card/whatsapp.svg" alt="">
                             </a>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="relative rounded-2xl overflow-hidden">
+                        <button class="absolute z-[3] top-2.5 left-2.5 py-1 px-3 bg-white font-semibold rounded-md text-[10px] md:text-xs">Элитные</button>
+                        <button class="absolute z-[3] top-1 right-1 likeButton">
+                            <svg class="fill-white transition-all duration-500" width="38" height="36" viewBox="0 0 38 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_2011_3815)">
+                                    <path d="M9 15.119C9 20.2037 13.0194 22.9132 15.9617 25.3384C17 26.1942 18 27 19 27C20 27 21 26.1942 22.0383 25.3384C24.9806 22.9132 29 20.2037 29 15.119C29 10.0344 23.4998 6.42841 19 11.3167C14.5002 6.42841 9 10.0344 9 15.119Z"/>
+                                    <path d="M15.9617 25.3384L15.6437 25.7243H15.6437L15.9617 25.3384ZM19 11.3167L18.6321 11.6554C18.7268 11.7582 18.8602 11.8167 19 11.8167C19.1398 11.8167 19.2732 11.7582 19.3679 11.6554L19 11.3167ZM22.0383 25.3384L21.7202 24.9526L22.0383 25.3384ZM16.2798 24.9526C13.263 22.466 9.5 19.9163 9.5 15.119H8.5C8.5 20.491 12.7759 23.3604 15.6437 25.7243L16.2798 24.9526ZM9.5 15.119C9.5 12.7516 10.7799 10.7647 12.5282 9.92913C14.2382 9.11182 16.5076 9.34745 18.6321 11.6554L19.3679 10.9781C16.9925 8.39771 14.2619 7.99214 12.0969 9.02689C9.97022 10.0433 8.5 12.4018 8.5 15.119H9.5ZM15.6437 25.7243C16.1581 26.1483 16.6946 26.5869 17.2345 26.9168C17.7737 27.2463 18.3673 27.5 19 27.5V26.5C18.6327 26.5 18.2263 26.3509 17.7559 26.0635C17.2863 25.7765 16.8036 25.3844 16.2798 24.9526L15.6437 25.7243ZM22.3563 25.7243C25.2241 23.3604 29.5 20.491 29.5 15.119H28.5C28.5 19.9163 24.737 22.466 21.7202 24.9526L22.3563 25.7243ZM29.5 15.119C29.5 12.4018 28.0298 10.0433 25.9031 9.02689C23.7381 7.99214 21.0075 8.39771 18.6321 10.9781L19.3679 11.6554C21.4924 9.34745 23.7618 9.11182 25.4718 9.92913C27.2201 10.7647 28.5 12.7516 28.5 15.119H29.5ZM21.7202 24.9526C21.1964 25.3844 20.7137 25.7765 20.2441 26.0635C19.7737 26.3509 19.3673 26.5 19 26.5V27.5C19.6327 27.5 20.2263 27.2463 20.7655 26.9168C21.3054 26.5869 21.8419 26.1483 22.3563 25.7243L21.7202 24.9526Z" fill="#FEFEFE"/>
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_2011_3815" x="0.5" y="0.499512" width="37" height="35.0005" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset/>
+                                        <feGaussianBlur stdDeviation="4"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0.156863 0 0 0 0 0.160784 0 0 0 0 0.14902 0 0 0 0.5 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2011_3815"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2011_3815" result="shape"/>
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </button>
+                        <div class="absolute left-3 right-3 bottom-10 z-[3] flex items-center gap-1.5 flex-wrap">
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">BDSM</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Элитная</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Пирсинг</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Видео</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">МЖМ</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Поцелуи</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">GFE</p>
+                        </div>
+                        <div class="absolute w-full h-[140px] z-[2] left-0 bottom-0 card-background"></div>
+                        <a href="card-page.html" class="swiper card-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="Assets/Images/card/main2.png" alt="" class="w-full rounded-2xl">                                    
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/Images/card/main2.png" alt="" class="w-full rounded-2xl">                                    
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/Images/card/main2.png" alt="" class="w-full rounded-2xl">                                    
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex flex-col gap-2 p-3 bg-[#F6F6F6] rounded-2xl card-shadow -mt-7 relative z-[3]">
+                        <div class="flex flex-col w-full">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-1.5">
+                                    <a href="card-page.html" class="text-sm md:text-base font-bold">Имя Псевдоним, 21</a>
+                                    <img src="Assets/Images/card/check.svg" alt="">
+                                </div>
+                                <div class="flex items-center gap-1.5">
+                                    <img src="Assets/Images/card/star.svg" alt="">
+                                    <p class="text-xs md:text-sm font-medium">4.8</p>
+                                </div>
+                            </div>
+                            <p class="text-xs md:text-sm font-light">Бульвар Адмирала Ушакова</p>
+                        </div>
+                        <p class="text-[#6A6A6A] text-[10px] md:text-xs">Встречаюсь индивидуально! Живу в центре. У меня всегда чисто и уютно</p>
+                        <div class="flex flex-col w-full tab-main">
+                            <ul class="flex items-center text-xs md:text-sm w-full font-semibold text-[#6A6A6A]">
+                                <li class="text-center w-1/2 tab-toggler rounded-tl-lg bg-[#6A6A6A1A] flex"><a href="" class="w-full py-2">Апартаменты</a></li>
+                                <li class="text-center w-1/2 tab-toggler rounded-tr-lg bg-[#6A6A6A1A] flex"><a href="" class="w-full py-2">На выезд</a></li>
+                            </ul>
+                            <div class="tab-card p-2 grid grid-cols-3 gap-1 rounded-b-lg bg-white">
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Express</p>
+                                    <h3 class="text-sm md:text-base font-bold">9 000₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Час</p>
+                                    <h3 class="text-sm md:text-base font-bold">20 000₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Ночь</p>
+                                    <h3 class="text-sm md:text-base font-bold">100 000₽</h3>
+                                </div>
+                            </div>
+                            <div class="tab-card p-2 grid grid-cols-3 gap-1 rounded-b-lg bg-white">
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Express</p>
+                                    <h3 class="text-sm md:text-base font-bold">9 002₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Час</p>
+                                    <h3 class="text-sm md:text-base font-bold">20 002₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Ночь</p>
+                                    <h3 class="text-sm md:text-base font-bold">100 002₽</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 w-full">
+                            <div class="flex items-center justify-center px-4 h-9 md:h-10 grow gap-2 text-white font-semibold rounded-lg cursor-pointer bg-gradient-to-r from-[#EE5253] to-[#FF6B6B] showPhone">
+                                <img src="Assets/Images/card/phone.svg" alt="" class="w-3.5 md:w-4">
+                                <p class="text-xs md:text-sm show shrink-0">Показать телефон</p>
+                                <a href="tel:88005553535" class="phone hidden shrink-0">8 800 555-35-35</a>
+                            </div>
+                            <a href="#" class="w-9 md:w-10">
+                                <img src="Assets/Images/card/tg.svg" alt="">
+                            </a>
+                            <a href="#" class="w-9 md:w-10">
+                                <img src="Assets/Images/card/whatsapp.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="relative rounded-2xl overflow-hidden">
+                        <button class="absolute z-[3] top-2.5 left-2.5 py-1 px-3 bg-white font-semibold rounded-md text-[10px] md:text-xs">Элитные</button>
+                        <button class="absolute z-[3] top-1 right-1 likeButton">
+                            <svg class="fill-[#EE5253] transition-all duration-500" width="38" height="36" viewBox="0 0 38 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_2011_3815)">
+                                    <path d="M9 15.119C9 20.2037 13.0194 22.9132 15.9617 25.3384C17 26.1942 18 27 19 27C20 27 21 26.1942 22.0383 25.3384C24.9806 22.9132 29 20.2037 29 15.119C29 10.0344 23.4998 6.42841 19 11.3167C14.5002 6.42841 9 10.0344 9 15.119Z"/>
+                                    <path d="M15.9617 25.3384L15.6437 25.7243H15.6437L15.9617 25.3384ZM19 11.3167L18.6321 11.6554C18.7268 11.7582 18.8602 11.8167 19 11.8167C19.1398 11.8167 19.2732 11.7582 19.3679 11.6554L19 11.3167ZM22.0383 25.3384L21.7202 24.9526L22.0383 25.3384ZM16.2798 24.9526C13.263 22.466 9.5 19.9163 9.5 15.119H8.5C8.5 20.491 12.7759 23.3604 15.6437 25.7243L16.2798 24.9526ZM9.5 15.119C9.5 12.7516 10.7799 10.7647 12.5282 9.92913C14.2382 9.11182 16.5076 9.34745 18.6321 11.6554L19.3679 10.9781C16.9925 8.39771 14.2619 7.99214 12.0969 9.02689C9.97022 10.0433 8.5 12.4018 8.5 15.119H9.5ZM15.6437 25.7243C16.1581 26.1483 16.6946 26.5869 17.2345 26.9168C17.7737 27.2463 18.3673 27.5 19 27.5V26.5C18.6327 26.5 18.2263 26.3509 17.7559 26.0635C17.2863 25.7765 16.8036 25.3844 16.2798 24.9526L15.6437 25.7243ZM22.3563 25.7243C25.2241 23.3604 29.5 20.491 29.5 15.119H28.5C28.5 19.9163 24.737 22.466 21.7202 24.9526L22.3563 25.7243ZM29.5 15.119C29.5 12.4018 28.0298 10.0433 25.9031 9.02689C23.7381 7.99214 21.0075 8.39771 18.6321 10.9781L19.3679 11.6554C21.4924 9.34745 23.7618 9.11182 25.4718 9.92913C27.2201 10.7647 28.5 12.7516 28.5 15.119H29.5ZM21.7202 24.9526C21.1964 25.3844 20.7137 25.7765 20.2441 26.0635C19.7737 26.3509 19.3673 26.5 19 26.5V27.5C19.6327 27.5 20.2263 27.2463 20.7655 26.9168C21.3054 26.5869 21.8419 26.1483 22.3563 25.7243L21.7202 24.9526Z" fill="#FEFEFE"/>
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_2011_3815" x="0.5" y="0.499512" width="37" height="35.0005" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset/>
+                                        <feGaussianBlur stdDeviation="4"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0.156863 0 0 0 0 0.160784 0 0 0 0 0.14902 0 0 0 0.5 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2011_3815"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2011_3815" result="shape"/>
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </button>
+                        <div class="absolute left-3 right-3 bottom-10 z-[3] flex items-center gap-1.5 flex-wrap">
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">BDSM</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Элитная</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Пирсинг</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Видео</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">МЖМ</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Поцелуи</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">GFE</p>
+                        </div>
+                        <div class="absolute w-full h-[140px] z-[2] left-0 bottom-0 card-background"></div>
+                        <a href="card-page.html" class="swiper card-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="Assets/Images/card/main3.png" alt="" class="w-full rounded-2xl">                                    
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/Images/card/main3.png" alt="" class="w-full rounded-2xl">                                    
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/Images/card/main3.png" alt="" class="w-full rounded-2xl">                                    
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex flex-col gap-2 p-3 bg-[#F6F6F6] rounded-2xl card-shadow -mt-7 relative z-[3]">
+                        <div class="flex flex-col w-full">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-1.5">
+                                    <a href="card-page.html" class="text-sm md:text-base font-bold">Имя Псевдоним, 21</a>
+                                    <img src="Assets/Images/card/check.svg" alt="">
+                                </div>
+                                <div class="flex items-center gap-1.5">
+                                    <img src="Assets/Images/card/star.svg" alt="">
+                                    <p class="text-xs md:text-sm font-medium">4.8</p>
+                                </div>
+                            </div>
+                            <p class="text-xs md:text-sm font-light">Бульвар Адмирала Ушакова</p>
+                        </div>
+                        <p class="text-[#6A6A6A] text-[10px] md:text-xs">Встречаюсь индивидуально! Живу в центре. У меня всегда чисто и уютно</p>
+                        <div class="flex flex-col w-full tab-main">
+                            <ul class="flex items-center text-xs md:text-sm w-full font-semibold text-[#6A6A6A]">
+                                <li class="text-center w-1/2 tab-toggler rounded-tl-lg bg-[#6A6A6A1A] flex"><a href="" class="w-full py-2">Апартаменты</a></li>
+                                <li class="text-center w-1/2 tab-toggler rounded-tr-lg bg-[#6A6A6A1A] flex"><a href="" class="w-full py-2">На выезд</a></li>
+                            </ul>
+                            <div class="tab-card p-2 grid grid-cols-3 gap-1 rounded-b-lg bg-white">
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Express</p>
+                                    <h3 class="text-sm md:text-base font-bold">9 000₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Час</p>
+                                    <h3 class="text-sm md:text-base font-bold">20 000₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Ночь</p>
+                                    <h3 class="text-sm md:text-base font-bold">100 000₽</h3>
+                                </div>
+                            </div>
+                            <div class="tab-card p-2 grid grid-cols-3 gap-1 rounded-b-lg bg-white">
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Express</p>
+                                    <h3 class="text-sm md:text-base font-bold">9 002₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Час</p>
+                                    <h3 class="text-sm md:text-base font-bold">20 002₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Ночь</p>
+                                    <h3 class="text-sm md:text-base font-bold">100 002₽</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 w-full">
+                            <div class="flex items-center justify-center px-4 h-9 md:h-10 grow gap-2 text-white font-semibold rounded-lg cursor-pointer bg-gradient-to-r from-[#EE5253] to-[#FF6B6B] showPhone">
+                                <img src="Assets/Images/card/phone.svg" alt="" class="w-3.5 md:w-4">
+                                <p class="text-xs md:text-sm show shrink-0">Показать телефон</p>
+                                <a href="tel:88005553535" class="phone hidden shrink-0">8 800 555-35-35</a>
+                            </div>
+                            <a href="#" class="w-9 md:w-10">
+                                <img src="Assets/Images/card/whatsapp.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="relative rounded-2xl overflow-hidden">
+                        <button class="absolute z-[3] top-2.5 left-2.5 py-1 px-3 bg-white font-semibold rounded-md text-[10px] md:text-xs">Элитные</button>
+                        <button class="absolute z-[3] top-1 right-1 likeButton">
+                            <svg class="fill-white transition-all duration-500" width="38" height="36" viewBox="0 0 38 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_2011_3815)">
+                                    <path d="M9 15.119C9 20.2037 13.0194 22.9132 15.9617 25.3384C17 26.1942 18 27 19 27C20 27 21 26.1942 22.0383 25.3384C24.9806 22.9132 29 20.2037 29 15.119C29 10.0344 23.4998 6.42841 19 11.3167C14.5002 6.42841 9 10.0344 9 15.119Z"/>
+                                    <path d="M15.9617 25.3384L15.6437 25.7243H15.6437L15.9617 25.3384ZM19 11.3167L18.6321 11.6554C18.7268 11.7582 18.8602 11.8167 19 11.8167C19.1398 11.8167 19.2732 11.7582 19.3679 11.6554L19 11.3167ZM22.0383 25.3384L21.7202 24.9526L22.0383 25.3384ZM16.2798 24.9526C13.263 22.466 9.5 19.9163 9.5 15.119H8.5C8.5 20.491 12.7759 23.3604 15.6437 25.7243L16.2798 24.9526ZM9.5 15.119C9.5 12.7516 10.7799 10.7647 12.5282 9.92913C14.2382 9.11182 16.5076 9.34745 18.6321 11.6554L19.3679 10.9781C16.9925 8.39771 14.2619 7.99214 12.0969 9.02689C9.97022 10.0433 8.5 12.4018 8.5 15.119H9.5ZM15.6437 25.7243C16.1581 26.1483 16.6946 26.5869 17.2345 26.9168C17.7737 27.2463 18.3673 27.5 19 27.5V26.5C18.6327 26.5 18.2263 26.3509 17.7559 26.0635C17.2863 25.7765 16.8036 25.3844 16.2798 24.9526L15.6437 25.7243ZM22.3563 25.7243C25.2241 23.3604 29.5 20.491 29.5 15.119H28.5C28.5 19.9163 24.737 22.466 21.7202 24.9526L22.3563 25.7243ZM29.5 15.119C29.5 12.4018 28.0298 10.0433 25.9031 9.02689C23.7381 7.99214 21.0075 8.39771 18.6321 10.9781L19.3679 11.6554C21.4924 9.34745 23.7618 9.11182 25.4718 9.92913C27.2201 10.7647 28.5 12.7516 28.5 15.119H29.5ZM21.7202 24.9526C21.1964 25.3844 20.7137 25.7765 20.2441 26.0635C19.7737 26.3509 19.3673 26.5 19 26.5V27.5C19.6327 27.5 20.2263 27.2463 20.7655 26.9168C21.3054 26.5869 21.8419 26.1483 22.3563 25.7243L21.7202 24.9526Z" fill="#FEFEFE"/>
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_2011_3815" x="0.5" y="0.499512" width="37" height="35.0005" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset/>
+                                        <feGaussianBlur stdDeviation="4"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0.156863 0 0 0 0 0.160784 0 0 0 0 0.14902 0 0 0 0.5 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2011_3815"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2011_3815" result="shape"/>
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </button>
+                        <div class="absolute left-3 right-3 bottom-10 z-[3] flex items-center gap-1.5 flex-wrap">
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">BDSM</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Элитная</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Пирсинг</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Видео</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">МЖМ</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Поцелуи</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">GFE</p>
+                        </div>
+                        <div class="absolute w-full h-[140px] z-[2] left-0 bottom-0 card-background"></div>
+                        <a href="card-page.html" class="swiper card-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="Assets/Images/card/main4.png" alt="" class="w-full rounded-2xl">                                    
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/Images/card/main4.png" alt="" class="w-full rounded-2xl">                                    
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/Images/card/main4.png" alt="" class="w-full rounded-2xl">                                    
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex flex-col gap-2 p-3 bg-[#F6F6F6] rounded-2xl card-shadow -mt-7 relative z-[3]">
+                        <div class="flex flex-col w-full">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-1.5">
+                                    <a href="card-page.html" class="text-sm md:text-base font-bold">Имя Псевдоним, 21</a>
+                                    <img src="Assets/Images/card/check.svg" alt="">
+                                </div>
+                                <div class="flex items-center gap-1.5">
+                                    <img src="Assets/Images/card/star.svg" alt="">
+                                    <p class="text-xs md:text-sm font-medium">4.8</p>
+                                </div>
+                            </div>
+                            <p class="text-xs md:text-sm font-light">Бульвар Адмирала Ушакова</p>
+                        </div>
+                        <p class="text-[#6A6A6A] text-[10px] md:text-xs">Встречаюсь индивидуально! Живу в центре. У меня всегда чисто и уютно</p>
+                        <div class="flex flex-col w-full tab-main">
+                            <ul class="flex items-center text-xs md:text-sm w-full font-semibold text-[#6A6A6A]">
+                                <li class="text-center w-1/2 tab-toggler rounded-tl-lg bg-[#6A6A6A1A] flex"><a href="" class="w-full py-2">Апартаменты</a></li>
+                                <li class="text-center w-1/2 tab-toggler rounded-tr-lg bg-[#6A6A6A1A] flex"><a href="" class="w-full py-2">На выезд</a></li>
+                            </ul>
+                            <div class="tab-card p-2 grid grid-cols-3 gap-1 rounded-b-lg bg-white">
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Express</p>
+                                    <h3 class="text-sm md:text-base font-bold">9 000₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Час</p>
+                                    <h3 class="text-sm md:text-base font-bold">20 000₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Ночь</p>
+                                    <h3 class="text-sm md:text-base font-bold">100 000₽</h3>
+                                </div>
+                            </div>
+                            <div class="tab-card p-2 grid grid-cols-3 gap-1 rounded-b-lg bg-white">
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Express</p>
+                                    <h3 class="text-sm md:text-base font-bold">9 002₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Час</p>
+                                    <h3 class="text-sm md:text-base font-bold">20 002₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Ночь</p>
+                                    <h3 class="text-sm md:text-base font-bold">100 002₽</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 w-full">
+                            <div class="flex items-center justify-center px-4 h-9 md:h-10 grow gap-2 text-white font-semibold rounded-lg cursor-pointer bg-gradient-to-r from-[#EE5253] to-[#FF6B6B] showPhone">
+                                <img src="Assets/Images/card/phone.svg" alt="" class="w-3.5 md:w-4">
+                                <p class="text-xs md:text-sm show shrink-0">Показать телефон</p>
+                                <a href="tel:88005553535" class="phone hidden shrink-0">8 800 555-35-35</a>
+                            </div>
+                            <a href="#" class="w-9 md:w-10">
+                                <img src="Assets/Images/card/tg.svg" alt="">
+                            </a>
+                            <a href="#" class="w-9 md:w-10">
+                                <img src="Assets/Images/card/whatsapp.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="relative rounded-2xl overflow-hidden">
+                        <button class="absolute z-[3] top-2.5 left-2.5 py-1 px-3 bg-white font-semibold rounded-md text-[10px] md:text-xs">Элитные</button>
+                        <button class="absolute z-[3] top-1 right-1 likeButton">
+                            <svg class="fill-white transition-all duration-500" width="38" height="36" viewBox="0 0 38 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_2011_3815)">
+                                    <path d="M9 15.119C9 20.2037 13.0194 22.9132 15.9617 25.3384C17 26.1942 18 27 19 27C20 27 21 26.1942 22.0383 25.3384C24.9806 22.9132 29 20.2037 29 15.119C29 10.0344 23.4998 6.42841 19 11.3167C14.5002 6.42841 9 10.0344 9 15.119Z"/>
+                                    <path d="M15.9617 25.3384L15.6437 25.7243H15.6437L15.9617 25.3384ZM19 11.3167L18.6321 11.6554C18.7268 11.7582 18.8602 11.8167 19 11.8167C19.1398 11.8167 19.2732 11.7582 19.3679 11.6554L19 11.3167ZM22.0383 25.3384L21.7202 24.9526L22.0383 25.3384ZM16.2798 24.9526C13.263 22.466 9.5 19.9163 9.5 15.119H8.5C8.5 20.491 12.7759 23.3604 15.6437 25.7243L16.2798 24.9526ZM9.5 15.119C9.5 12.7516 10.7799 10.7647 12.5282 9.92913C14.2382 9.11182 16.5076 9.34745 18.6321 11.6554L19.3679 10.9781C16.9925 8.39771 14.2619 7.99214 12.0969 9.02689C9.97022 10.0433 8.5 12.4018 8.5 15.119H9.5ZM15.6437 25.7243C16.1581 26.1483 16.6946 26.5869 17.2345 26.9168C17.7737 27.2463 18.3673 27.5 19 27.5V26.5C18.6327 26.5 18.2263 26.3509 17.7559 26.0635C17.2863 25.7765 16.8036 25.3844 16.2798 24.9526L15.6437 25.7243ZM22.3563 25.7243C25.2241 23.3604 29.5 20.491 29.5 15.119H28.5C28.5 19.9163 24.737 22.466 21.7202 24.9526L22.3563 25.7243ZM29.5 15.119C29.5 12.4018 28.0298 10.0433 25.9031 9.02689C23.7381 7.99214 21.0075 8.39771 18.6321 10.9781L19.3679 11.6554C21.4924 9.34745 23.7618 9.11182 25.4718 9.92913C27.2201 10.7647 28.5 12.7516 28.5 15.119H29.5ZM21.7202 24.9526C21.1964 25.3844 20.7137 25.7765 20.2441 26.0635C19.7737 26.3509 19.3673 26.5 19 26.5V27.5C19.6327 27.5 20.2263 27.2463 20.7655 26.9168C21.3054 26.5869 21.8419 26.1483 22.3563 25.7243L21.7202 24.9526Z" fill="#FEFEFE"/>
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_2011_3815" x="0.5" y="0.499512" width="37" height="35.0005" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset/>
+                                        <feGaussianBlur stdDeviation="4"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0.156863 0 0 0 0 0.160784 0 0 0 0 0.14902 0 0 0 0.5 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2011_3815"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2011_3815" result="shape"/>
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </button>
+                        <div class="absolute left-3 right-3 bottom-10 z-[3] flex items-center gap-1.5 flex-wrap">
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">BDSM</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Элитная</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Пирсинг</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Видео</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">МЖМ</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Поцелуи</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">GFE</p>
+                        </div>
+                        <div class="absolute w-full h-[140px] z-[2] left-0 bottom-0 card-background"></div>
+                        <a href="card-page.html" class="swiper card-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="Assets/Images/card/main5.png" alt="" class="w-full rounded-2xl">                                    
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/Images/card/main5.png" alt="" class="w-full rounded-2xl">                                    
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/Images/card/main5.png" alt="" class="w-full rounded-2xl">                                    
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex flex-col gap-2 p-3 bg-[#F6F6F6] rounded-2xl card-shadow -mt-7 relative z-[3]">
+                        <div class="flex flex-col w-full">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-1.5">
+                                    <a href="card-page.html" class="text-sm md:text-base font-bold">Имя Псевдоним, 21</a>
+                                    <img src="Assets/Images/card/check.svg" alt="">
+                                </div>
+                                <div class="flex items-center gap-1.5">
+                                    <img src="Assets/Images/card/star.svg" alt="">
+                                    <p class="text-xs md:text-sm font-medium">4.8</p>
+                                </div>
+                            </div>
+                            <p class="text-xs md:text-sm font-light">Бульвар Адмирала Ушакова</p>
+                        </div>
+                        <p class="text-[#6A6A6A] text-[10px] md:text-xs">Встречаюсь индивидуально! Живу в центре. У меня всегда чисто и уютно</p>
+                        <div class="flex flex-col w-full tab-main">
+                            <ul class="flex items-center text-xs md:text-sm w-full font-semibold text-[#6A6A6A]">
+                                <li class="text-center w-1/2 tab-toggler rounded-tl-lg bg-[#6A6A6A1A] flex"><a href="" class="w-full py-2">Апартаменты</a></li>
+                                <li class="text-center w-1/2 tab-toggler rounded-tr-lg bg-[#6A6A6A1A] flex"><a href="" class="w-full py-2">На выезд</a></li>
+                            </ul>
+                            <div class="tab-card p-2 grid grid-cols-3 gap-1 rounded-b-lg bg-white">
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Express</p>
+                                    <h3 class="text-sm md:text-base font-bold">9 000₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Час</p>
+                                    <h3 class="text-sm md:text-base font-bold">20 000₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Ночь</p>
+                                    <h3 class="text-sm md:text-base font-bold">100 000₽</h3>
+                                </div>
+                            </div>
+                            <div class="tab-card p-2 grid grid-cols-3 gap-1 rounded-b-lg bg-white">
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Express</p>
+                                    <h3 class="text-sm md:text-base font-bold">9 002₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Час</p>
+                                    <h3 class="text-sm md:text-base font-bold">20 002₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Ночь</p>
+                                    <h3 class="text-sm md:text-base font-bold">100 002₽</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 w-full">
+                            <div class="flex items-center justify-center px-4 h-9 md:h-10 grow gap-2 text-white font-semibold rounded-lg cursor-pointer bg-gradient-to-r from-[#EE5253] to-[#FF6B6B] showPhone">
+                                <img src="Assets/Images/card/phone.svg" alt="" class="w-3.5 md:w-4">
+                                <p class="text-xs md:text-sm show shrink-0">Показать телефон</p>
+                                <a href="tel:88005553535" class="phone hidden shrink-0">8 800 555-35-35</a>
+                            </div>
+                            <a href="#" class="w-9 md:w-10">
+                                <img src="Assets/Images/card/tg.svg" alt="">
+                            </a>
+                            <a href="#" class="w-9 md:w-10">
+                                <img src="Assets/Images/card/whatsapp.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="relative rounded-2xl overflow-hidden">
+                        <button class="absolute z-[3] top-2.5 left-2.5 py-1 px-3 bg-white font-semibold rounded-md text-[10px] md:text-xs">Элитные</button>
+                        <button class="absolute z-[3] top-1 right-1 likeButton">
+                            <svg class="fill-white transition-all duration-500" width="38" height="36" viewBox="0 0 38 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_2011_3815)">
+                                    <path d="M9 15.119C9 20.2037 13.0194 22.9132 15.9617 25.3384C17 26.1942 18 27 19 27C20 27 21 26.1942 22.0383 25.3384C24.9806 22.9132 29 20.2037 29 15.119C29 10.0344 23.4998 6.42841 19 11.3167C14.5002 6.42841 9 10.0344 9 15.119Z"/>
+                                    <path d="M15.9617 25.3384L15.6437 25.7243H15.6437L15.9617 25.3384ZM19 11.3167L18.6321 11.6554C18.7268 11.7582 18.8602 11.8167 19 11.8167C19.1398 11.8167 19.2732 11.7582 19.3679 11.6554L19 11.3167ZM22.0383 25.3384L21.7202 24.9526L22.0383 25.3384ZM16.2798 24.9526C13.263 22.466 9.5 19.9163 9.5 15.119H8.5C8.5 20.491 12.7759 23.3604 15.6437 25.7243L16.2798 24.9526ZM9.5 15.119C9.5 12.7516 10.7799 10.7647 12.5282 9.92913C14.2382 9.11182 16.5076 9.34745 18.6321 11.6554L19.3679 10.9781C16.9925 8.39771 14.2619 7.99214 12.0969 9.02689C9.97022 10.0433 8.5 12.4018 8.5 15.119H9.5ZM15.6437 25.7243C16.1581 26.1483 16.6946 26.5869 17.2345 26.9168C17.7737 27.2463 18.3673 27.5 19 27.5V26.5C18.6327 26.5 18.2263 26.3509 17.7559 26.0635C17.2863 25.7765 16.8036 25.3844 16.2798 24.9526L15.6437 25.7243ZM22.3563 25.7243C25.2241 23.3604 29.5 20.491 29.5 15.119H28.5C28.5 19.9163 24.737 22.466 21.7202 24.9526L22.3563 25.7243ZM29.5 15.119C29.5 12.4018 28.0298 10.0433 25.9031 9.02689C23.7381 7.99214 21.0075 8.39771 18.6321 10.9781L19.3679 11.6554C21.4924 9.34745 23.7618 9.11182 25.4718 9.92913C27.2201 10.7647 28.5 12.7516 28.5 15.119H29.5ZM21.7202 24.9526C21.1964 25.3844 20.7137 25.7765 20.2441 26.0635C19.7737 26.3509 19.3673 26.5 19 26.5V27.5C19.6327 27.5 20.2263 27.2463 20.7655 26.9168C21.3054 26.5869 21.8419 26.1483 22.3563 25.7243L21.7202 24.9526Z" fill="#FEFEFE"/>
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_2011_3815" x="0.5" y="0.499512" width="37" height="35.0005" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset/>
+                                        <feGaussianBlur stdDeviation="4"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0.156863 0 0 0 0 0.160784 0 0 0 0 0.14902 0 0 0 0.5 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2011_3815"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2011_3815" result="shape"/>
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </button>
+                        <div class="absolute left-3 right-3 bottom-10 z-[3] flex items-center gap-1.5 flex-wrap">
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">BDSM</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Элитная</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Пирсинг</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Видео</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">МЖМ</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Поцелуи</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">GFE</p>
+                        </div>
+                        <div class="absolute w-full h-[140px] z-[2] left-0 bottom-0 card-background"></div>
+                        <a href="card-page.html" class="swiper card-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="Assets/Images/card/main6.png" alt="" class="w-full rounded-2xl">                                    
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/Images/card/main6.png" alt="" class="w-full rounded-2xl">                                    
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/Images/card/main6.png" alt="" class="w-full rounded-2xl">                                    
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex flex-col gap-2 p-3 bg-[#F6F6F6] rounded-2xl card-shadow -mt-7 relative z-[3]">
+                        <div class="flex flex-col w-full">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-1.5">
+                                    <a href="card-page.html" class="text-sm md:text-base font-bold">Имя Псевдоним, 21</a>
+                                    <img src="Assets/Images/card/check.svg" alt="">
+                                </div>
+                                <div class="flex items-center gap-1.5">
+                                    <img src="Assets/Images/card/star.svg" alt="">
+                                    <p class="text-xs md:text-sm font-medium">4.8</p>
+                                </div>
+                            </div>
+                            <p class="text-xs md:text-sm font-light">Бульвар Адмирала Ушакова</p>
+                        </div>
+                        <p class="text-[#6A6A6A] text-[10px] md:text-xs">Встречаюсь индивидуально! Живу в центре. У меня всегда чисто и уютно</p>
+                        <div class="flex flex-col w-full tab-main">
+                            <ul class="flex items-center text-xs md:text-sm w-full font-semibold text-[#6A6A6A]">
+                                <li class="text-center w-1/2 tab-toggler rounded-tl-lg bg-[#6A6A6A1A] flex"><a href="" class="w-full py-2">Апартаменты</a></li>
+                                <li class="text-center w-1/2 tab-toggler rounded-tr-lg bg-[#6A6A6A1A] flex"><a href="" class="w-full py-2">На выезд</a></li>
+                            </ul>
+                            <div class="tab-card p-2 grid grid-cols-3 gap-1 rounded-b-lg bg-white">
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Express</p>
+                                    <h3 class="text-sm md:text-base font-bold">9 000₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Час</p>
+                                    <h3 class="text-sm md:text-base font-bold">20 000₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Ночь</p>
+                                    <h3 class="text-sm md:text-base font-bold">100 000₽</h3>
+                                </div>
+                            </div>
+                            <div class="tab-card p-2 grid grid-cols-3 gap-1 rounded-b-lg bg-white">
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Express</p>
+                                    <h3 class="text-sm md:text-base font-bold">9 002₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Час</p>
+                                    <h3 class="text-sm md:text-base font-bold">20 002₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Ночь</p>
+                                    <h3 class="text-sm md:text-base font-bold">100 002₽</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 w-full">
+                            <div class="flex items-center justify-center px-4 h-9 md:h-10 grow gap-2 text-white font-semibold rounded-lg cursor-pointer bg-gradient-to-r from-[#EE5253] to-[#FF6B6B] showPhone">
+                                <img src="Assets/Images/card/phone.svg" alt="" class="w-3.5 md:w-4">
+                                <p class="text-xs md:text-sm show shrink-0">Показать телефон</p>
+                                <a href="tel:88005553535" class="phone hidden shrink-0">8 800 555-35-35</a>
+                            </div>
+                            <a href="#" class="w-9 md:w-10">
+                                <img src="Assets/Images/card/tg.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="relative rounded-2xl overflow-hidden">
+                        <button class="absolute z-[3] top-2.5 left-2.5 py-1 px-3 bg-white font-semibold rounded-md text-[10px] md:text-xs">Элитные</button>
+                        <button class="absolute z-[3] top-1 right-1 likeButton">
+                            <svg class="fill-white transition-all duration-500" width="38" height="36" viewBox="0 0 38 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_2011_3815)">
+                                    <path d="M9 15.119C9 20.2037 13.0194 22.9132 15.9617 25.3384C17 26.1942 18 27 19 27C20 27 21 26.1942 22.0383 25.3384C24.9806 22.9132 29 20.2037 29 15.119C29 10.0344 23.4998 6.42841 19 11.3167C14.5002 6.42841 9 10.0344 9 15.119Z"/>
+                                    <path d="M15.9617 25.3384L15.6437 25.7243H15.6437L15.9617 25.3384ZM19 11.3167L18.6321 11.6554C18.7268 11.7582 18.8602 11.8167 19 11.8167C19.1398 11.8167 19.2732 11.7582 19.3679 11.6554L19 11.3167ZM22.0383 25.3384L21.7202 24.9526L22.0383 25.3384ZM16.2798 24.9526C13.263 22.466 9.5 19.9163 9.5 15.119H8.5C8.5 20.491 12.7759 23.3604 15.6437 25.7243L16.2798 24.9526ZM9.5 15.119C9.5 12.7516 10.7799 10.7647 12.5282 9.92913C14.2382 9.11182 16.5076 9.34745 18.6321 11.6554L19.3679 10.9781C16.9925 8.39771 14.2619 7.99214 12.0969 9.02689C9.97022 10.0433 8.5 12.4018 8.5 15.119H9.5ZM15.6437 25.7243C16.1581 26.1483 16.6946 26.5869 17.2345 26.9168C17.7737 27.2463 18.3673 27.5 19 27.5V26.5C18.6327 26.5 18.2263 26.3509 17.7559 26.0635C17.2863 25.7765 16.8036 25.3844 16.2798 24.9526L15.6437 25.7243ZM22.3563 25.7243C25.2241 23.3604 29.5 20.491 29.5 15.119H28.5C28.5 19.9163 24.737 22.466 21.7202 24.9526L22.3563 25.7243ZM29.5 15.119C29.5 12.4018 28.0298 10.0433 25.9031 9.02689C23.7381 7.99214 21.0075 8.39771 18.6321 10.9781L19.3679 11.6554C21.4924 9.34745 23.7618 9.11182 25.4718 9.92913C27.2201 10.7647 28.5 12.7516 28.5 15.119H29.5ZM21.7202 24.9526C21.1964 25.3844 20.7137 25.7765 20.2441 26.0635C19.7737 26.3509 19.3673 26.5 19 26.5V27.5C19.6327 27.5 20.2263 27.2463 20.7655 26.9168C21.3054 26.5869 21.8419 26.1483 22.3563 25.7243L21.7202 24.9526Z" fill="#FEFEFE"/>
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_2011_3815" x="0.5" y="0.499512" width="37" height="35.0005" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset/>
+                                        <feGaussianBlur stdDeviation="4"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0.156863 0 0 0 0 0.160784 0 0 0 0 0.14902 0 0 0 0.5 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2011_3815"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2011_3815" result="shape"/>
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </button>
+                        <div class="absolute left-3 right-3 bottom-10 z-[3] flex items-center gap-1.5 flex-wrap">
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">BDSM</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Элитная</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Пирсинг</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Видео</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">МЖМ</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Поцелуи</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">GFE</p>
+                        </div>
+                        <div class="absolute w-full h-[140px] z-[2] left-0 bottom-0 card-background"></div>
+                        <a href="card-page.html" class="swiper card-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="Assets/Images/card/main7.png" alt="" class="w-full rounded-2xl">                                    
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/Images/card/main7.png" alt="" class="w-full rounded-2xl">                                    
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/Images/card/main7.png" alt="" class="w-full rounded-2xl">                                    
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex flex-col gap-2 p-3 bg-[#F6F6F6] rounded-2xl card-shadow -mt-7 relative z-[3]">
+                        <div class="flex flex-col w-full">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-1.5">
+                                    <a href="card-page.html" class="text-sm md:text-base font-bold">Имя Псевдоним, 21</a>
+                                    <img src="Assets/Images/card/check.svg" alt="">
+                                </div>
+                                <div class="flex items-center gap-1.5">
+                                    <img src="Assets/Images/card/star.svg" alt="">
+                                    <p class="text-xs md:text-sm font-medium">4.8</p>
+                                </div>
+                            </div>
+                            <p class="text-xs md:text-sm font-light">Бульвар Адмирала Ушакова</p>
+                        </div>
+                        <p class="text-[#6A6A6A] text-[10px] md:text-xs">Встречаюсь индивидуально! Живу в центре. У меня всегда чисто и уютно</p>
+                        <div class="flex flex-col w-full tab-main">
+                            <ul class="flex items-center text-xs md:text-sm w-full font-semibold text-[#6A6A6A]">
+                                <li class="text-center w-1/2 tab-toggler rounded-tl-lg bg-[#6A6A6A1A] flex"><a href="" class="w-full py-2">Апартаменты</a></li>
+                                <li class="text-center w-1/2 tab-toggler rounded-tr-lg bg-[#6A6A6A1A] flex"><a href="" class="w-full py-2">На выезд</a></li>
+                            </ul>
+                            <div class="tab-card p-2 grid grid-cols-3 gap-1 rounded-b-lg bg-white">
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Express</p>
+                                    <h3 class="text-sm md:text-base font-bold">9 000₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Час</p>
+                                    <h3 class="text-sm md:text-base font-bold">20 000₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Ночь</p>
+                                    <h3 class="text-sm md:text-base font-bold">100 000₽</h3>
+                                </div>
+                            </div>
+                            <div class="tab-card p-2 grid grid-cols-3 gap-1 rounded-b-lg bg-white">
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Express</p>
+                                    <h3 class="text-sm md:text-base font-bold">9 002₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Час</p>
+                                    <h3 class="text-sm md:text-base font-bold">20 002₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Ночь</p>
+                                    <h3 class="text-sm md:text-base font-bold">100 002₽</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 w-full">
+                            <div class="flex items-center justify-center px-4 h-9 md:h-10 grow gap-2 text-white font-semibold rounded-lg cursor-pointer bg-gradient-to-r from-[#EE5253] to-[#FF6B6B] showPhone">
+                                <img src="Assets/Images/card/phone.svg" alt="" class="w-3.5 md:w-4">
+                                <p class="text-xs md:text-sm show shrink-0">Показать телефон</p>
+                                <a href="tel:88005553535" class="phone hidden shrink-0">8 800 555-35-35</a>
+                            </div>
+                            <a href="#" class="w-9 md:w-10">
+                                <img src="Assets/Images/card/tg.svg" alt="">
+                            </a>
+                            <a href="#" class="w-9 md:w-10">
+                                <img src="Assets/Images/card/whatsapp.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="relative rounded-2xl overflow-hidden">
+                        <button class="absolute z-[3] top-2.5 left-2.5 py-1 px-3 bg-white font-semibold rounded-md text-[10px] md:text-xs">Элитные</button>
+                        <button class="absolute z-[3] top-1 right-1 likeButton">
+                            <svg class="fill-white transition-all duration-500" width="38" height="36" viewBox="0 0 38 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_2011_3815)">
+                                    <path d="M9 15.119C9 20.2037 13.0194 22.9132 15.9617 25.3384C17 26.1942 18 27 19 27C20 27 21 26.1942 22.0383 25.3384C24.9806 22.9132 29 20.2037 29 15.119C29 10.0344 23.4998 6.42841 19 11.3167C14.5002 6.42841 9 10.0344 9 15.119Z"/>
+                                    <path d="M15.9617 25.3384L15.6437 25.7243H15.6437L15.9617 25.3384ZM19 11.3167L18.6321 11.6554C18.7268 11.7582 18.8602 11.8167 19 11.8167C19.1398 11.8167 19.2732 11.7582 19.3679 11.6554L19 11.3167ZM22.0383 25.3384L21.7202 24.9526L22.0383 25.3384ZM16.2798 24.9526C13.263 22.466 9.5 19.9163 9.5 15.119H8.5C8.5 20.491 12.7759 23.3604 15.6437 25.7243L16.2798 24.9526ZM9.5 15.119C9.5 12.7516 10.7799 10.7647 12.5282 9.92913C14.2382 9.11182 16.5076 9.34745 18.6321 11.6554L19.3679 10.9781C16.9925 8.39771 14.2619 7.99214 12.0969 9.02689C9.97022 10.0433 8.5 12.4018 8.5 15.119H9.5ZM15.6437 25.7243C16.1581 26.1483 16.6946 26.5869 17.2345 26.9168C17.7737 27.2463 18.3673 27.5 19 27.5V26.5C18.6327 26.5 18.2263 26.3509 17.7559 26.0635C17.2863 25.7765 16.8036 25.3844 16.2798 24.9526L15.6437 25.7243ZM22.3563 25.7243C25.2241 23.3604 29.5 20.491 29.5 15.119H28.5C28.5 19.9163 24.737 22.466 21.7202 24.9526L22.3563 25.7243ZM29.5 15.119C29.5 12.4018 28.0298 10.0433 25.9031 9.02689C23.7381 7.99214 21.0075 8.39771 18.6321 10.9781L19.3679 11.6554C21.4924 9.34745 23.7618 9.11182 25.4718 9.92913C27.2201 10.7647 28.5 12.7516 28.5 15.119H29.5ZM21.7202 24.9526C21.1964 25.3844 20.7137 25.7765 20.2441 26.0635C19.7737 26.3509 19.3673 26.5 19 26.5V27.5C19.6327 27.5 20.2263 27.2463 20.7655 26.9168C21.3054 26.5869 21.8419 26.1483 22.3563 25.7243L21.7202 24.9526Z" fill="#FEFEFE"/>
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_2011_3815" x="0.5" y="0.499512" width="37" height="35.0005" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset/>
+                                        <feGaussianBlur stdDeviation="4"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0.156863 0 0 0 0 0.160784 0 0 0 0 0.14902 0 0 0 0.5 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2011_3815"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2011_3815" result="shape"/>
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </button>
+                        <div class="absolute left-3 right-3 bottom-10 z-[3] flex items-center gap-1.5 flex-wrap">
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">BDSM</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Элитная</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Пирсинг</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Видео</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">МЖМ</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">Поцелуи</p>
+                            <p class="py-1 px-2 rounded-md bg-[#FEFEFE33] text-[#FEFEFE] text-[10px] w-fit">GFE</p>
+                        </div>
+                        <div class="absolute w-full h-[140px] z-[2] left-0 bottom-0 card-background"></div>
+                        <a href="card-page.html" class="swiper card-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="Assets/Images/card/main8.png" alt="" class="w-full rounded-2xl">                                    
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/Images/card/main8.png" alt="" class="w-full rounded-2xl">                                    
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="Assets/Images/card/main8.png" alt="" class="w-full rounded-2xl">                                    
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex flex-col gap-2 p-3 bg-[#F6F6F6] rounded-2xl card-shadow -mt-7 relative z-[3]">
+                        <div class="flex flex-col w-full">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-1.5">
+                                    <a href="card-page.html" class="text-sm md:text-base font-bold">Имя Псевдоним, 21</a>
+                                    <img src="Assets/Images/card/check.svg" alt="">
+                                </div>
+                                <div class="flex items-center gap-1.5">
+                                    <img src="Assets/Images/card/star.svg" alt="">
+                                    <p class="text-xs md:text-sm font-medium">4.8</p>
+                                </div>
+                            </div>
+                            <p class="text-xs md:text-sm font-light">Бульвар Адмирала Ушакова</p>
+                        </div>
+                        <p class="text-[#6A6A6A] text-[10px] md:text-xs">Встречаюсь индивидуально! Живу в центре. У меня всегда чисто и уютно</p>
+                        <div class="flex flex-col w-full tab-main">
+                            <ul class="flex items-center text-xs md:text-sm w-full font-semibold text-[#6A6A6A]">
+                                <li class="text-center w-1/2 tab-toggler rounded-tl-lg bg-[#6A6A6A1A] flex"><a href="" class="w-full py-2">Апартаменты</a></li>
+                                <li class="text-center w-1/2 tab-toggler rounded-tr-lg bg-[#6A6A6A1A] flex"><a href="" class="w-full py-2">На выезд</a></li>
+                            </ul>
+                            <div class="tab-card p-2 grid grid-cols-3 gap-1 rounded-b-lg bg-white">
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Express</p>
+                                    <h3 class="text-sm md:text-base font-bold">9 000₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Час</p>
+                                    <h3 class="text-sm md:text-base font-bold">20 000₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Ночь</p>
+                                    <h3 class="text-sm md:text-base font-bold">100 000₽</h3>
+                                </div>
+                            </div>
+                            <div class="tab-card p-2 grid grid-cols-3 gap-1 rounded-b-lg bg-white">
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Express</p>
+                                    <h3 class="text-sm md:text-base font-bold">9 002₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Час</p>
+                                    <h3 class="text-sm md:text-base font-bold">20 002₽</h3>
+                                </div>
+                                <div class="flex flex-col items-center text-center gap-1">
+                                    <p class="text-xs md:text-sm font-light">Ночь</p>
+                                    <h3 class="text-sm md:text-base font-bold">100 002₽</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 w-full">
+                            <div class="flex items-center justify-center px-4 h-9 md:h-10 grow gap-2 text-white font-semibold rounded-lg cursor-pointer bg-gradient-to-r from-[#EE5253] to-[#FF6B6B] showPhone">
+                                <img src="Assets/Images/card/phone.svg" alt="" class="w-3.5 md:w-4">
+                                <p class="text-xs md:text-sm show shrink-0">Показать телефон</p>
+                                <a href="tel:88005553535" class="phone hidden shrink-0">8 800 555-35-35</a>
+                            </div>
                         </div>
                     </div>
                 </article>

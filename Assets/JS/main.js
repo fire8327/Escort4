@@ -24,6 +24,12 @@ const swiper = new Swiper('.nav-slider', {
         }
     }
 });
+/* card-slider */
+const swiper2 = new Swiper('.card-slider', {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 1
+});
 
 
 /* showPhone */
