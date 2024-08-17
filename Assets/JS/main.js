@@ -59,15 +59,27 @@ const swiper4 = new Swiper('.girlPage-slider', {
 
 
 /* modal */
-$(".openModal").each((i, el) => {
+$("#subwayOpen").click(() => {
+  $("#subwayModal").removeClass("-translate-y-full")
+  $("#overlay").removeClass("hidden")
+})
+$("#filtersOpen").click(() => {
+  $("#filtersModal").removeClass("-translate-y-full")
+  $("#overlay").removeClass("hidden")
+})
+
+$(".closeModal").each((i, el) => {
   $(el).click(() => {
-    $("#modal").removeClass("-translate-y-full")
-    $("#overlayModal").removeClass("hidden")
+    $(el).parent().addClass("-translate-y-full")
+    $("#overlay").addClass("hidden")
   })
 })
-$("#closeModal, #overlayModal").click(() => {
-  $("#modal").addClass("-translate-y-full")
-  $("#overlayModal").addClass("hidden")
+
+$("#overlay").click(() => {
+  $(".modal").each((i, el) => {
+    $(el).addClass("-translate-y-full")
+  })
+  $("#overlay").addClass("hidden")
 })
 
 

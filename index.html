@@ -19,7 +19,7 @@
                             <img src="Assets/Images/header/search.svg" alt="">
                         </button>
                     </form>
-                    <button class="h-9 xl:h-10 max-md:hidden openModal">
+                    <button id="subwayOpen" class="h-9 xl:h-10 max-md:hidden">
                         <img src="Assets/Images/header/location.svg" alt="">
                     </button>
                     <button class="h-9 xl:h-10">
@@ -303,7 +303,7 @@
         </div>
     </header>
     
-    <div id="modal" class="fixed top-0 -translate-y-full transition-all duration-500 left-0 z-[5] w-full bg-white">
+    <div id="subwayModal" class="fixed top-0 -translate-y-full transition-all duration-500 left-0 z-[5] w-full bg-white modal">
         <div class="container mx-auto px-4 md:px-5 xl:px-[30px] flex flex-col gap-6 items-center py-6 w-full">
             <h2 class="text-center text-lg md:text-xl xl:text-2xl font-bold">Станции метро</h2>
             <ul class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-1 text-[#EE5253] w-full">             
@@ -354,11 +354,284 @@
                 <li><a href="#">Владыкино <span class="italic text-[#282926]">(34)</span></a></li>
             </ul>
         </div>
-        <button id="closeModal" class="fixed z-[6] top-6 right-6 w-8 xl:w-9">
+        <button class="fixed z-[6] top-6 right-6 w-8 xl:w-9 closeModal">
             <img src="Assets/Images/header/close.svg" alt="">
         </button>
     </div>
-    <div id="overlayModal" class="fixed z-[4] inset-0 bg-black/30 hidden"></div>
+
+    <div id="filtersModal" class="fixed top-0 -translate-y-full transition-all duration-500 left-0 z-[5] w-full bg-white modal">
+        <div class="container mx-auto px-4 md:px-5 xl:px-[30px] flex flex-col gap-6 items-center py-6 w-full">
+            <h2 class="text-center text-lg md:text-xl xl:text-2xl font-bold">Фильтры</h2>
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 xl:lg:grid-cols-4 gap-8 text-sm md:text-base xl:text-lg text-[#292826]/70">
+                <div class="flex flex-col gap-2">
+                    <p class="text-[#EE5253] text-base md:text-lg xl:text-xl font-medium">Цена за час</p>      
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="price" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>До 1500 ₽</span>
+                    </label>
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="price" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>До 2000 ₽</span>
+                    </label>
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="price" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>От 2001 До 3500 ₽</span>
+                    </label>
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="price" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>От 3501 До 5000 ₽</span>
+                    </label>
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="price" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>От 5001 До 8000 ₽</span>
+                    </label>
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="price" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>8001 ₽ и более</span>
+                    </label>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <p class="text-[#EE5253] text-base md:text-lg xl:text-xl font-medium">Грудь</p>      
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="bust" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>1 размер</span>
+                    </label>
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="bust" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>2 размер</span>
+                    </label>
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="bust" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>3 размер</span>
+                    </label>
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="bust" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>4 размер</span>
+                    </label>
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="bust" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>5 размер</span>
+                    </label>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <p class="text-[#EE5253] text-base md:text-lg xl:text-xl font-medium">Национальность</p>      
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="nationality" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>славянки</span>
+                    </label>
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="nationality" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>азиатки</span>
+                    </label>
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="nationality" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>европейки</span>
+                    </label>
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="nationality" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>негритянки</span>
+                    </label>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <p class="text-[#EE5253] text-base md:text-lg xl:text-xl font-medium">Цвет волос</p>      
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="hair" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>рыжие</span>
+                    </label>
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="hair" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>брюнетки</span>
+                    </label>
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="hair" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>блондинки</span>
+                    </label>
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="hair" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>русые</span>
+                    </label>
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="hair" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>другое</span>
+                    </label>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <p class="text-[#EE5253] text-base md:text-lg xl:text-xl font-medium">Рост</p>      
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="height" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>низкие</span>
+                    </label>
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="height" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>средние</span>
+                    </label>
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="height" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>высокие</span>
+                    </label>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <p class="text-[#EE5253] text-base md:text-lg xl:text-xl font-medium">Фигура</p>      
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="figure" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>худые</span>
+                    </label>
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="figure" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>спортивные</span>
+                    </label>
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="figure" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>толстые</span>
+                    </label>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <p class="text-[#EE5253] text-base md:text-lg xl:text-xl font-medium">Дополнительно</p>      
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="additioonally" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>татуировки</span>
+                    </label>
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="additioonally" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>пирсинг</span>
+                    </label>
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="additioonally" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>беременные</span>
+                    </label>
+                    <label class="flex items-center relative gap-2">
+                        <input type="checkbox" name="additioonally" class="hidden peer">
+                        <div class="w-4 h-4 border-2 border-gray-300 rounded flex items-center justify-center transition-all peer-checked:border-[#EE5253]"></div>
+                        <svg class="w-3 h-3 text-[#EE5253] absolute left-0.5 top-1/2 -translate-y-1/2 opacity-0 transition-all peer-checked:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586 4.707 9.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 000-1.414z" clip-rule="evenodd" />
+                        </svg>
+                        <span>не салон</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <button class="fixed z-[6] top-6 right-6 w-8 xl:w-9 closeModal">
+            <img src="Assets/Images/header/close.svg" alt="">
+        </button>
+    </div>
+
+    <div id="overlay" class="fixed z-[4] inset-0 bg-black/30 hidden"></div>
 
     <main class="grid-container gap-y-6 md:gap-y-10 xl:gap-y-14 my-6 md:my-10 xl:my-14">
         <section class="flex flex-col gap-6 w-full items-center">
@@ -372,7 +645,7 @@
                     <h1 class="text-xl md:text-2xl xl:text-3xl font-bold">Элитные (135)</h1>
                 </div>
                 <div class="flex items-center gap-3 text-[#6A6A6A]">
-                    <button class="flex items-center gap-2 p-2 md:py-3 md:px-4 text-xs xl:text-sm rounded-lg border border-[#6A6A6A] openModal">
+                    <button id="filtersOpen" class="flex items-center gap-2 p-2 md:py-3 md:px-4 text-xs xl:text-sm rounded-lg border border-[#6A6A6A]">
                         <img src="Assets/Images/main/filter.svg" alt="">
                         <span class="max-md:hidden">Фильтры</span>
                     </button>
